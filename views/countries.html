@@ -1,0 +1,36 @@
+
+<div class="table-responsive" style="height: 600px; overflow:auto;">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Country Code</th>
+                <th>Capital</th>
+                <th>Area in km2</th>
+                <th>Population</th>
+                <th>Continent</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr ng-repeat="(key,value) in data">
+
+            
+                <td>{{key}}</td>
+                <td><a href="#/countries/{{value.countryName}}">{{value.countryName}}</a></td>
+                <td>{{value.countryCode}}</td>
+                <td>{{value.capital}}</td>
+                <td>{{value.areaInSqKm | number}}</td>
+                <td>{{value.population | number}}</td>
+                <td>{{value.continent}}</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</div>
+
+ 
+     
+</div>  
+</div>
