@@ -7,7 +7,7 @@ window.app.controller('MainCtrl', ['$scope', 'countryService',
   				 	$scope.data = {};
   				 	countryService.load().then(function(data){
       						$scope.data = data['geonames'];
-      						console.log($scope.data);
+      						
 						      if($scope.data === undefined)
 						          return;
 						      
